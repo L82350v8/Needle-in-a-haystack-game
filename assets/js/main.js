@@ -24,7 +24,7 @@ function newGame() {
 	$("#player-wins").text(wins);
 	$("#player-losses").text(losses);
 
-	needleNbr = Math.floor(Math.random() * ((stacks - 2) + 1) + 2);
+	needleNbr = Math.floor(Math.random() * ((stacks - 2) + 1) + 1);
 
 	$(".jumbotron").append('<h1 class="display-4 text-center hidden" id="you-won-msg">You Won !</h1>');
 	$(".jumbotron").append('<h1 class="display-4 text-center hidden" id="you-lost-msg">You Lose !</h1>');
@@ -49,6 +49,7 @@ function newGame() {
 }
 
 // ==============================< main process >========================================== // 
+
 
 $(document).ready(function () {
 
